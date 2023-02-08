@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy-Regular;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}

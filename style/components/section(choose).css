@@ -1,0 +1,170 @@
+.choose {
+    width: 100%;
+    padding: 80px 17%;
+    background: #FAFAFA;
+}
+
+.choose-title {
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.choose-text {
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666666;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.choose-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choose-cards__card {
+    width: 31%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 45px;
+    transition: .3s;
+}
+
+.choose-cards__card:hover {
+    transform: scale(1.02);
+}
+
+.choose-cards__card-img {
+    width: 100%;
+    min-height: 227px;
+
+    margin-bottom: 18px;
+}
+
+.choose-cards__card-title {
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 18px;
+
+}
+
+.choose-cards__card-text {
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #AAAAAA;
+
+    padding: 0 20px;
+
+    margin-bottom: 33px;
+}
+
+
+.choose-cards__card-btn {
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    color: #fff;
+    background: #F25822;
+    padding: 15px 25px 15px 30px;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: .25s linear;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choose-cards__card-btn:hover {
+    opacity: .85;
+}
+
+.choose-cards__card-btn img {
+    margin-top: 2px;
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .choose {
+        padding: 60px 10%;
+    }
+
+    .choose-title {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .choose-text {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .choose-cards__card-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .choose-cards__card-text {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .choose-cards__card-btn {
+        font-size: 13px;
+        padding: 9px 15px 10px 18px;
+    }
+
+    .choose-cards__card-btn img {
+        margin-left: 5px;
+    }
+
+    .choose-cards__card-img {
+        min-height: 180px;
+    }
+
+    .choose-cards__card {
+        padding-bottom: 35px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .choose-cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .choose-title {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .choose-text {
+        font-size: 12px;
+    }
+
+    .choose {
+        padding: 40px 5%;
+    }
+}

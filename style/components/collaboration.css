@@ -1,0 +1,40 @@
+.collaboration {
+    margin: 80px 0;
+    width: 100%;
+    padding: 0 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    .collaboration {
+        margin: 70px 0 60px;
+        padding: 0 10%;
+    }
+    .collaboration img {
+        width: 14%;
+    }
+}
+
+@media (max-width: 768px) {
+    .collaboration {
+        margin: 60px 0 50px;
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .collaboration img {
+        width: 100px;
+        height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .collaboration {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 40px 0 20px;
+    }
+}

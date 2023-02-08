@@ -1,0 +1,221 @@
+.footer {
+    width: 100%;
+    padding: 100px 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F3F3;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo__img {
+    margin-right: 5px;
+}
+
+.footer-logo__text, .footer-logo__text span {
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+}
+
+.footer-logo__text {
+    margin-left: 5px;
+    color: #000;
+}
+
+.footer-logo__text span {
+    color: #F25822;
+}
+
+.footer-info__text {
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 160%;
+    color: #666666;
+}
+
+.footer-info__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info__icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-info__icons * {
+    transition: .2s ease-in-out;
+}
+
+.footer-info__icons div[data-social-name="facebook"]:hover {
+    background: #F25822;
+}
+
+.footer-info__icons div[data-social-name="twitter"]:hover {
+    background: #2583DB;
+}
+
+.footer-info__icons div[data-social-name="linkedin"]:hover {
+    background: #8422e0;
+}
+
+.footer-info__icons div[data-social-name="google"]:hover {
+    background: #e60086;
+}
+
+.footer-info__icons div:hover path {
+    fill: #fff;
+}
+
+.footer-info__icons div:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.footer-info, .company, .services, .contact {
+    height: 240px;
+}
+
+.footer-info {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.company h2, .services h2, .contact h2 {
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.company, .services, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 21%;
+}
+
+.company li a, .services li a, .contact li a {
+    font-family: Gilroy-SemiBold;
+    font-size: 16px;
+    color: #666666;
+}
+
+.company li, .services li {
+    list-style: disc;
+    list-style-position: inside;
+    color: #F25822;
+}
+
+.company li:not(:last-of-type), .services li:not(:last-of-type), .contact li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.contact li a span {
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    color: #333333;
+}
+
+
+.contact li a {
+    font-family: Gilroy-SemiBold;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    color: #666666;
+}
+
+.footer li a:hover {
+    color: #000000;
+}
+
+.footer li a {
+    transition: .3s;
+}
+
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 60px 10% 30px;
+        flex-wrap: wrap-reverse;
+        align-items: baseline;
+    }
+
+    .footer-info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-info, .company, .services, .contact {
+        height: auto;
+    }
+
+    .footer-info__text {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .footer-info__text {
+        margin-bottom: 5px;
+    }
+
+
+    .company h2, .services h2, .contact h2 {
+        margin-bottom: 15px;
+        font-size: 21px;
+    }
+
+    .company , .services , .contact {
+        width: 23%;
+        margin-bottom: 40px;
+
+    }
+
+    .company li a, .services li a, .contact li a {
+        font-size: 13px;
+    }
+
+    .company li:not(:last-of-type), .services li:not(:last-of-type), .contact li:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+
+    .contact li a span {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 5% 20px;
+        justify-content: space-around;
+    }
+
+    .company, .services, .contact {
+        width: 200px;
+        text-align: center;
+        align-items: center;
+    }
+}

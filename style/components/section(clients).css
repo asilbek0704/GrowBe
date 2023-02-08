@@ -1,0 +1,130 @@
+.clients {
+    width: 100%;
+    padding: 90px 0;
+}
+
+.clients-title {
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.clients-text {
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/* test */
+
+
+
+
+.splide__pagination {
+    bottom: -40px !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #F25822 !important;
+    opacity: 1 !important;
+}
+
+.splide__slide.is-active {
+    box-shadow: 2px 2px 50px -5px rgba(0, 0, 0, 0.07);
+}
+
+.splide__slide {
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #EEEEEE;
+    transition: .3s;
+}
+
+.splide__list-title {
+    font-family: Gilroy-SemiBold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.splide__list-text {
+    font-family: Gilroy-Medium;
+    font-size: 13px;
+    line-height: 150%;
+    /* identical to box height, or 19px */
+    text-align: center;
+    color: #888888;
+}
+
+.splide__slide img {
+    margin-bottom: 10px;
+}
+
+.splide__slide span {
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.splide__track {
+    padding: 50px 0 !important;
+}
+
+@media (max-width: 992px) {
+
+    .clients {
+        padding: 60px 0;
+    }
+
+    .clients-text {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+
+    .clients-title {
+        margin-bottom: 5px;
+    }
+
+    .splide__list-title {
+        font-size: 14px;
+        line-height: auto;
+        margin-bottom: 10px;
+        font-weight: 100;
+    }
+
+    .splide__slide span {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .splide__slide {
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .splide__slide {
+        width: 88% !important;
+    }
+
+    .splide__list-title {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,133 @@
+.solution {
+    width: 100%;
+    padding: 80px 17% 0;
+    background: url('../../img/section(solution)/section-bg.jpg') no-repeat center / cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solution-about__title {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    margin-bottom: 25px;
+    width: 80%;
+}
+
+.solution-about__text {
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.solution-img {
+    width: 48%;
+    min-height: 350px;
+    height: 100%;
+    transition: .3s;
+}
+
+/* .solution-img:hover {
+    transform: scale(1.03);
+} */
+
+.solution:hover .solution-img {
+    transform: scale(1.03);
+}
+
+.solution-about {
+    width: 52%;
+    margin-bottom: 80px;
+}
+
+.solution-about__btn {
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    color: #fff;
+    background: #F25822;
+    padding: 15px 32px;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .25s linear;
+}
+
+.solution-about__btn:hover {
+    opacity: .85;
+}
+
+@media (max-width: 992px) {
+    .solution {
+        padding: 50px 10% 0;
+    }
+    .solution-about__title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .solution-about__text {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    .solution-about__btn {
+        font-size: 13px;
+        padding: 10px 27px;
+    }
+    .solution-about {
+        width: 49%;
+    }
+    .solution-img {
+        min-height: auto;
+        width: 51%;
+    }
+    .solution-about {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .solution-about__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .solution-about__text {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .solution-about__btn {
+        font-size: 11px;
+        padding: 8px 20px;
+    }
+    .solution-about {
+        width: 45%;
+    }
+    .solution-img {
+        width: 55%;
+    }
+    .solution {
+        padding: 30px 5% 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .solution-about__title {
+        width: 100%;
+    }
+    .solution {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .solution-about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

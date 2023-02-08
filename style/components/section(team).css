@@ -1,0 +1,167 @@
+.team {
+    width: 100%;
+    padding: 80px 17%;
+}
+
+.team-title {
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-text {
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    width: 46%;
+    margin: 0 auto 45px;
+    color: #666666;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.team-cards__card {
+    width: 23%;
+    border: 2px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    transition: .3s;
+}
+
+.team-cards__card:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 50px -5px rgba(0, 0, 0, 0.07);
+}
+
+.team-cards__card-img {
+    margin-bottom: 15px;
+}
+
+.team-cards__card-name {
+    font-family: Gilroy-SemiBold;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.team-cards__card-text {
+    font-family: Gilroy-Medium;
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.team-cards__card-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-cards__card-icons div.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.team-cards__card-icons * {
+    transition: .2s ease-in-out;
+}
+
+.team-cards__card-icons div.social-icon[data-social-name="facebook"]:hover {
+    background: #F25822;
+}
+
+.team-cards__card-icons div.social-icon[data-social-name="twitter"]:hover {
+    background: #2583DB;
+}
+
+.team-cards__card-icons div.social-icon[data-social-name="linkedin"]:hover {
+    background: #8422e0;
+}
+
+.team-cards__card-icons div.social-icon[data-social-name="google"]:hover {
+    background: #e60086;
+}
+
+.team-cards__card-icons div.social-icon:hover path {
+    fill: #fff;
+}
+
+
+
+
+.team-cards__card-icons div.social-icon:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 992px) {
+    .team {
+        padding: 60px 10%;
+    }
+
+    .team-title {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .team-text {
+        width: 60%;
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    .team-cards__card {
+        width: 34%;
+        padding: 35px 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .team-cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .team {
+        padding: 40px 5%;
+    }
+
+    .team-title {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .team-text {
+        font-size: 12px;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+
+    .team-cards__card {
+        width: 40%;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-cards__card {
+        width: 60%;
+    }
+}

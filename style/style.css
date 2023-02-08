@@ -1,0 +1,15 @@
+@import url('fonts.css');
+@import url('base.css');
+@import url('components/nav.css');
+@import url('components/header.css');
+@import url('components/collaboration.css');
+@import url('components/section(solution).css');
+@import url('components/section(options).css');
+@import url('components/section(choose).css');
+@import url('components/section(excellence).css');
+@import url('components/achievements.css');
+@import url('components/section(check).css');
+@import url('components/section(plans).css');
+@import url('components/section(team).css');
+@import url('components/section(clients).css');
+@import url('components/footer.css');

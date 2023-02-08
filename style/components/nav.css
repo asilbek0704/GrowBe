@@ -1,0 +1,289 @@
+.nav {
+    width: 100%;
+    padding: 40px 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky;
+    top: 0; */
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo__img {
+    margin-right: 5px;
+}
+
+.nav-logo__text, .nav-logo__text span {
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+}
+
+.nav-logo__text {
+    margin-left: 5px;
+    color: #000;
+}
+
+.nav-logo__text span {
+    color: #F25822;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links__list {
+    margin-right: 30px;
+}
+
+.nav-links__list a {
+    font-size: 14px;
+    color: #000;
+    font-family: Gilroy-SemiBold;
+    transition: .3s;
+}
+
+.nav-links__list a:hover {
+    opacity: .7;
+}
+
+.nav-links__list.active a {
+    color: #F25822;
+}
+
+.nav-links__button button {
+    padding: 12px 27px;
+    background: #F25822;
+    color: #fff;
+    font-size: 13px;
+    font-family: Gilroy-SemiBold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.nav-links__button button:hover {
+    opacity: .9;
+    transform: scale(.98);
+}
+
+.nav-links__list.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.nav-links__list.dropdown a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links__list.dropdown img {
+    margin-left: 4px;
+    margin-top: 2.5px;
+}
+
+.nav-links__list.dropdown::after {
+    content: 'Check Speed';
+    font-family: Gilroy-SemiBold;
+    font-size: 10px;
+    padding: 2px;
+    position: absolute;
+    bottom: -18px;
+    left: 2%;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links__list.dropdown::before {
+    content: 'Our Plans';
+    font-family: Gilroy-SemiBold;
+    font-size: 10px;
+    padding: 2px;
+    position: absolute;
+    bottom: -33px;
+    right: 3%;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-delay: 0.15s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links__list.dropdown:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-links__list.dropdown:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(9px);
+    background: url('../../img/nav/nav-overlay.png') no-repeat center;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.nav-overlay__links li a {
+    font-size: 30px;
+    color: #000;
+    font-family: Gilroy-SemiBold;
+    transition: .3s;
+}
+.nav-overlay__links li a:hover {
+    opacity: .65;
+}
+.nav-overlay__links li {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 0;
+}
+.nav-overlay__list.dropdown::after {
+    content: 'Check Speed';
+    top: 25%;
+    right: -120px;
+    transition: 0.3s;
+}
+
+.nav-overlay__list.dropdown::after,
+.nav-overlay__list.dropdown::before {
+    color: #000;
+    text-stroke: .4px #ffffff;
+    -webkit-text-stroke: .4px #ffffff;
+    width: 115px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    padding: 2px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.nav-overlay__list.dropdown::before {
+    content: 'Our Plans';
+    top: 100%;
+    right: -170px;
+    transition: 0.3s;
+    transition-delay: 0.15s;
+
+}
+.nav-overlay__list.dropdown:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.nav-overlay__list.dropdown:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+.nav-overlay__list.active a {
+    color: #F25822;
+}
+.nav-overlay__list.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    position: relative;
+}
+.nav-overlay__list.dropdown a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-overlay__list.dropdown .arrow-right {
+    margin-left: 4px;
+    margin-top: 1px;
+}
+.nav-overlay__list-button button {
+    margin-top: 25px;
+    padding: 12px 27px;
+    background: #F25822;
+    color: #fff;
+    font-size: 13px;
+    font-family: Gilroy-SemiBold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.nav-overlay__list-button button:hover {
+    opacity: .9;
+    transform: scale(.98);
+}
+.nav-overlay .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 65px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: #111111;
+    transition: .3s;
+}
+.nav-overlay .close:hover {
+    transform: scale(1.15) rotate(45deg);
+    opacity: .65;
+}
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        padding: 30px 10%;
+    }
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+    .nav-links__button button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .nav-links__list a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 20px 5%;
+        flex-direction: row;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-overlay__links {
+        display: block;
+    }
+    .burgerMenu {
+        display: block;
+    }
+    
+}
